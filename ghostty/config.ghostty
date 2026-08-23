@@ -1,0 +1,23 @@
+# The syntax is "key = value". The whitespace around the
+# equals doesn't matter.
+background = 282c34
+foreground = ffffff
+
+# Comments start with a `#` and are only valid on their own line.
+# Blank lines are ignored!
+
+confirm-close-surface = false
+
+keybind = ctrl+z=close_surface
+
+keybind = ctrl+d=close_tab
+
+keybind = ctrl+shift+f=start_search
+keybind = ctrl+f=search_selection
+
+keybind = ctrl+l=clear_screen
+
+
+# Empty values reset the configuration to the default value
+font-family =
+font-feature = -calt

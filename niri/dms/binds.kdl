@@ -1,0 +1,22 @@
+binds {
+    Mod+Ctrl+M hotkey-overlay-title="Default Web Browser: Open" { spawn "dms" "ipc" "call" "defaultApp" "browser"; }
+    Mod+Ctrl+Return hotkey-overlay-title="Task Manager: Toggle" { spawn "dms" "ipc" "call" "processlist" "toggle"; }
+    Mod+Ctrl+Down { focus-workspace-down; }
+    Mod+Ctrl+Shift+Down { move-column-to-workspace-down; }
+    Mod+Ctrl+Shift+Up { move-column-to-workspace-up; }
+    Mod+Ctrl+Up { focus-workspace-up; }
+    Ctrl+Shift+W repeat=false { close-window; }
+    F11 { fullscreen-window; }
+    Mod+BackSpace { toggle-window-floating; }
+    Mod+Ctrl+Left { focus-monitor-left; }
+    Mod+Ctrl+Right { focus-monitor-right; }
+    Mod+Shift+Left { move-column-left; }
+    Mod+Shift+Right { move-column-right; }
+    Mod+Shift+Up { maximize-column; }
+    Mod+Ctrl+K hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+Ctrl+L hotkey-overlay-title="Open File Manager" { spawn "ghostty" "-e" "yazi"; }
+    Mod+Ctrl+P allow-inhibiting=false hotkey-overlay-title="Spawn emacs" repeat=false cooldown-ms=100 { spawn "emacs"; }
+    Mod+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    Mod+Return hotkey-overlay-title="Run an Application: wofi" { spawn "wofi" "--show" "drun" "-I"; }
+    Mod+T hotkey-overlay-title="Open a Terminal: konsole" { spawn "konsole"; }
+}

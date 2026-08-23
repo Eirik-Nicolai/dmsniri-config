@@ -1,0 +1,102 @@
+{
+  "catWidget": {
+    "enabled": true
+  },
+  "wallpaperCarousel": {
+    "enabled": true
+  },
+  "bongoCat": {
+    "enabled": true,
+    "catColorMode": "primary",
+    "selectedDevicePath": "/dev/input/event9",
+    "showMetrics": false,
+    "catSizePercent": 108,
+    "classicIdle": true,
+    "enableBlinking": true
+  },
+  "appLauncher": {
+    "enabled": false
+  },
+  "dmsThemeSync": {
+    "enabled": true
+  },
+  "dmsconky": {
+    "addedApps": [
+      {
+        "exec": "/snap/bin/firefox",
+        "icon": "/snap/firefox/current/default256.png",
+        "name": "Firefox"
+      },
+      {
+        "exec": "/usr/bin/discord",
+        "icon": "discord",
+        "name": "Discord"
+      },
+      {
+        "exec": "konsole",
+        "icon": "utilities-terminal",
+        "name": "Konsole"
+      },
+      {
+        "exec": "/usr/bin/steam",
+        "icon": "steam",
+        "name": "Steam"
+      },
+      {
+        "exec": "/snap/bin/emacs.emacsclient",
+        "icon": "/snap/emacs/current/usr/share/icons/hicolor/scalable/apps/emacs.svg",
+        "name": "Emacs (Client)"
+      }
+    ],
+    "particleSize": 8,
+    "particleCount": 150,
+    "particleOpacity": 1,
+    "musicPlayerPath": "/usr/local/bin/splayer",
+    "appSize": 80,
+    "widgetHeight": 522,
+    "widgetWidth": 298,
+    "showClock": true,
+    "showWeather": true,
+    "showNetwork": true,
+    "defaultView": "apps",
+    "batteryAcGaugeColor": "#A1A1AA",
+    "batteryGaugeColor": "#A1A1AA",
+    "clockColonColor": "#F4F4F5",
+    "clockHourColor": "#E4E4E7",
+    "clockMinuteColor": "#D4D4D8",
+    "clockSecondColor": "#A1A1AA",
+    "cpuGaugeColor": "#D4D4D8",
+    "dateDayColor": "#A1A1AA",
+    "dateMonthColor": "#D4D4D8",
+    "dateWeekdayColor": "#D4D4D8",
+    "hardwareCpuLabelColor": "#A1A1AA",
+    "hardwareGpuLabelColor": "#A1A1AA",
+    "hardwareLabelColor": "#D4D4D8",
+    "memGaugeColor": "#A1A1AA",
+    "musicArtistColor": "#D4D4D8",
+    "musicBorderColor": "#A1A1AA",
+    "musicTimeColor": "#71717A",
+    "musicTitleColor": "#FAFAFA",
+    "networkDownColor": "#A1A1AA",
+    "networkGraphEndColor": "#52525B",
+    "networkGraphStartColor": "#A1A1AA",
+    "networkIconColor": "#D4D4D8",
+    "networkSsidColor": "#D4D4D8",
+    "networkUpColor": "#A1A1AA",
+    "ringBgColor": "#3F3F46",
+    "storageBarDanger": "#3F3F46",
+    "storageBarSafe": "#A1A1AA",
+    "storageBarWarn": "#71717A",
+    "storageHomeColor": "#A1A1AA",
+    "storageLabelColor": "#D4D4D8",
+    "storageRootColor": "#A1A1AA",
+    "tempGaugeColor": "#A1A1AA",
+    "weatherCityColor": "#D4D4D8",
+    "weatherHumidityColor": "#71717A",
+    "weatherWindColor": "#71717A",
+    "autoCycleColors": false
+  },
+  "quickCapture": {
+    "enabled": true
+  }
+}
