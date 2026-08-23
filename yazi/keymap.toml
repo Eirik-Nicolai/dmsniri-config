@@ -70,7 +70,7 @@ keymap = [
 	{ on = "<Tab>", run = "spot", desc = "Spot hovered file" },
 
 	# Operation
-	{ on = "o",         run = "open interactive",                        desc = "Open selected files" },
+	{ on = "o",         run = "open --interactive",                        desc = "Open selected files" },
 	# { on = "O",         run = "open --interactive",          desc = "Open selected files interactively" },
 	# { on = "<Enter>",   run = "open",                        desc = "Open selected files" },
 	# { on = "<S-Enter>", run = "open --interactive",          desc = "Open selected files interactively" },
@@ -86,11 +86,10 @@ keymap = [
 	# { on = "<C-->",     run = "hardlink",                    desc = "Hardlink yanked files" },
 	# { on = "Y",         run = "unyank",                      desc = "Cancel the yank status" },
 	# { on = "X",         run = "unyank",                      desc = "Cancel the yank status" },
-	{ on = [ "<C-c>", "d" ],         run = "remove",                      desc = "Trash selected files" },
+	{ on = [ "<C-c>", "d" ], run = "remove",                     desc = "Trash/delete selected files" },
 	# { on = "D",         run = "remove --permanently",        desc = "Permanently delete selected files" },
-	{ on = [ "<C-c>", "a" ],         run = "create",                      desc = "Create a file (ends with / for directories)" },
-	{ on = [ "<C-c>", "r" ],         run = "rename --cursor=before_ext",  desc = "Rename selected file(s)" },
-	{ on = [ "<C-c>", ";" ],         run = "shell --interactive",         desc = "Run a shell command" },
+	{ on = [ "<C-c>", "a" ], run = "create",                     desc = "Create a file (ends with / for directories)" },
+	{ on = [ "<C-c>", "r" ], run = "rename --cursor=before_ext", desc = "Rename selected file(s)" },
 	# { on = ":",         run = "shell --block --interactive", desc = "Run a shell command (block until finishes)" },
 	# { on = ".",         run = "hidden toggle",               desc = "Toggle the visibility of hidden files" },
 	# { on = "s",         run = "search --via=fd",             desc = "Search files by name via fd" },
@@ -98,6 +97,7 @@ keymap = [
 	# { on = "<C-s>",     run = "escape --search",             desc = "Cancel the ongoing search" },
 	# { on = "z",         run = "plugin fzf",                  desc = "Jump to a file/directory via fzf" },
 	# { on = "Z",         run = "plugin zoxide",               desc = "Jump to a directory via zoxide" },
+    { on = [ "<C-x>", "o" ], run = "shell --confirm 'GTK_IM_MODULE=simple ghostty --working-directory=.'", desc = "Open current directory in ghostty" },
 
 	# Linemode
 	{ on = [ "m", "s" ], run = "linemode size",        desc = "Linemode: size" },
@@ -138,11 +138,11 @@ keymap = [
 	{ on = [ "<C-c>", "s", "r" ], run = "sort random --reverse=no",                       desc = "Sort randomly" },
 
 	# Goto
-	{ on = [ "<C-c>", "h" ], run = "cd ~",             desc = "Go home" },
-	{ on = [ "<C-c>", "c" ], run = "cd ~/.config",     desc = "Go ~/.config" },
-	{ on = [ "<C-c>", "d" ], run = "cd ~/Downloads",   desc = "Go ~/Downloads" },
-	# { on = [ "<C-s>" ],      run = "cd --interactive", desc = "Jump interactively" },
-	{ on = [ "<C-c>", "f" ], run = "follow",           desc = "Follow hovered symlink" },
+	{ on = [ "<C-x>", "h" ], run = "cd ~",             desc = "Go home" },
+	{ on = [ "<C-x>", "c" ], run = "cd ~/.config",     desc = "Go ~/.config" },
+	{ on = [ "<C-x>", "d" ], run = "cd ~/Downloads",   desc = "Go ~/Downloads" },
+	{ on = [ "<C-x>", "z" ], run = "cd --interactive", desc = "Jump interactively" },
+	{ on = [ "<C-x>", "f" ], run = "follow",           desc = "Follow hovered symlink" },
 
 	# Tabs
 	{ on = [ "<C-x>", "t", "n" ], run = "tab_create --current",     desc = "Create a new tab in CWD" },

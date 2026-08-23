@@ -10,11 +10,14 @@ This repo contains keybindings themes and config for various parts of NIRI/DMS
     Application Launcher
 - qimgv                        - sudo apt-get install qimgv
     Image viewer
-- ghostty
+- ghostty                      - https://ghostty.org/
     ghostty doesn't play nice with dead keys, there's a config fix included or 
-    need to install ibus
-- yazi
+    you need to install ibus
+- yazi                         - https://github.com/sxyazi/yazi
     File manager
+- hyprlock                     - sudo apt-get install hyprlock
+    Screen lock manager        (config: https://github.com/mahaveergurjar/Hyprlock-Dots)
+
 
 ### Plugins
 - bongoCat                     - dms plugins install bongoCat
