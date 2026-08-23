@@ -13,9 +13,9 @@ binds {
     Mod+Shift+Left { move-column-left; }
     Mod+Shift+Right { move-column-right; }
     Mod+Shift+Up { maximize-column; }
-    Mod+Ctrl+K hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
+    Mod+Ctrl+K hotkey-overlay-title="Run an application: ghostty" { spawn "sh" "-c" "GTK_IM_MODULE=simple ghostty"; }
     Mod+Ctrl+L hotkey-overlay-title="Open File Manager" { spawn "ghostty" "-e" "yazi"; }
-    Mod+Ctrl+P allow-inhibiting=false hotkey-overlay-title="Spawn emacs" repeat=false cooldown-ms=100 { spawn "emacs"; }
+    Mod+Ctrl+P repeat=false cooldown-ms=100 allow-inhibiting=false hotkey-overlay-title="Spawn emacs" { spawn "emacs"; }
     Mod+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
     Mod+Return hotkey-overlay-title="Run an Application: wofi" { spawn "wofi" "--show" "drun" "-I"; }
     Mod+T hotkey-overlay-title="Open a Terminal: konsole" { spawn "konsole"; }
