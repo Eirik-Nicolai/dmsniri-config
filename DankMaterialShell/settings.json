@@ -173,7 +173,7 @@
   "workspaceAppIconSizeOffset": 0,
   "groupWorkspaceApps": true,
   "groupActiveWorkspaceApps": false,
-  "workspaceFollowFocus": true,
+  "workspaceFollowFocus": false,
   "showOccupiedWorkspacesOnly": false,
   "reverseScrolling": false,
   "dwlShowAllTags": false,
@@ -244,15 +244,13 @@
   "greeterAutoLogin": false,
   "greeterEnableFprint": false,
   "greeterEnableU2f": false,
-  "greeterWallpaperPath": "",
-  "greeterLockDateFormat": "",
+  "greeterWallpaperPath": "/home/eirik/personal/repos/dmsniri-config/Wallpapers/bLxcjh3_1.png",
+  "greeterLockDateFormat": "ddd MMM d",
   "greeterFontFamily": "",
-  "greeterWallpaperFillMode": "",
+  "greeterWallpaperFillMode": "Stretch",
   "greeterPamExternallyManaged": false,
-  "greeterSyncPending": true,
-  "greeterSyncBaseline": {
-    "showSeconds": false
-  },
+  "greeterSyncPending": false,
+  "greeterSyncBaseline": {},
   "mediaSize": 1,
   "appLauncherViewMode": "list",
   "spotlightModalViewMode": "list",
@@ -308,13 +306,13 @@
       "enabled": true
     }
   ],
-  "networkPreference": "auto",
+  "networkPreference": "wifi",
   "iconThemeDark": "System Default",
   "iconThemeLight": "System Default",
   "iconThemePerMode": false,
   "lastAppliedIconTheme": "candy-icons",
   "cursorSettings": {
-    "theme": "Dracula-cursors",
+    "theme": "System Default",
     "size": 24,
     "niri": {
       "hideWhenTyping": false,
@@ -331,7 +329,7 @@
   },
   "launcherLogoMode": "apps",
   "launcherLogoCustomPath": "",
-  "launcherLogoColorOverride": "",
+  "launcherLogoColorOverride": "primary",
   "launcherLogoColorInvertOnMode": false,
   "launcherLogoBrightness": 0.5,
   "launcherLogoContrast": 1,
@@ -363,11 +361,11 @@
   "soundPluggedIn": true,
   "muteSoundsWhenMediaPlaying": true,
   "acMonitorTimeout": 0,
-  "acLockTimeout": 0,
+  "acLockTimeout": 600,
   "acSuspendTimeout": 0,
   "acSuspendBehavior": 0,
   "acProfileName": "",
-  "acPostLockMonitorTimeout": 0,
+  "acPostLockMonitorTimeout": 1800,
   "batteryMonitorTimeout": 0,
   "batteryLockTimeout": 0,
   "batterySuspendTimeout": 0,
@@ -529,11 +527,7 @@
   "powerActionHoldDuration": 0.5,
   "powerMenuActions": [
     "reboot",
-    "logout",
-    "poweroff",
-    "lock",
-    "suspend",
-    "restart"
+    "poweroff"
   ],
   "powerMenuDefaultAction": "logout",
   "powerMenuGridLayout": false,
@@ -552,13 +546,21 @@
   "updaterIncludeFlatpak": true,
   "updaterAllowAUR": true,
   "updaterIgnoredPackages": [],
-  "displayNameMode": "system",
+  "displayNameMode": "model",
   "screenPreferences": {
     "wallpaper": [
       "all"
+    ],
+    "toast": [
+      {
+        "name": "eDP-1",
+        "model": "0x0A85"
+      }
     ]
   },
-  "showOnLastDisplay": {},
+  "showOnLastDisplay": {
+    "toast": true
+  },
   "niriOutputSettings": {
     "DP-2": {
       "focusAtStartup": true,
@@ -572,12 +574,45 @@
         "off": true
       },
       "disabled": true
+    },
+    "DP-4": {
+      "hotCorners": {
+        "off": true
+      }
+    },
+    "DP-3": {
+      "hotCorners": {
+        "off": true
+      }
+    },
+    "eDP-1": {
+      "hotCorners": {
+        "off": true
+      }
+    },
+    "Dell Inc. DELL S2721HS 80HZ5H3": {
+      "hotCorners": {
+        "off": true
+      },
+      "disabled": true
+    },
+    "BOE 0x0A85 Unknown": {
+      "hotCorners": {
+        "off": true
+      },
+      "disabled": true
+    },
+    "Dell Inc. DELL P2723DE HHMXMK3": {
+      "hotCorners": {
+        "off": true
+      },
+      "disabled": true
     }
   },
   "hyprlandOutputSettings": {},
   "displayProfiles": {},
   "activeDisplayProfile": {
-    "niri": "profile_1787164247094_1kurt4w"
+    "niri": "profile_1787557398007_znxslob"
   },
   "displayProfileAutoSelect": false,
   "displayShowDisconnected": false,
@@ -598,11 +633,7 @@
           "id": "launcherButton",
           "enabled": true
         },
-        "workspaceSwitcher",
-        {
-          "id": "quickCapture",
-          "enabled": true
-        }
+        "workspaceSwitcher"
       ],
       "centerWidgets": [
         {
@@ -614,13 +645,7 @@
           "enabled": true
         },
         "memUsage",
-        "cpuUsage",
-        {
-          "id": "gpuTemp",
-          "enabled": true,
-          "selectedGpuIndex": 0,
-          "pciId": "10de:2484"
-        }
+        "cpuUsage"
       ],
       "rightWidgets": [
         {
@@ -632,8 +657,22 @@
           "enabled": true
         },
         {
+          "id": "vpn",
+          "enabled": true
+        },
+        {
           "id": "clock",
           "enabled": true
+        },
+        {
+          "id": "battery",
+          "enabled": true,
+          "showBatteryPercent": true,
+          "showBatteryPercentOnlyOnBattery": false,
+          "showBatteryTime": false,
+          "showBatteryTimeOnlyOnBattery": false,
+          "batteryPillStyle": false,
+          "batteryPillPercentSign": false
         }
       ],
       "spacing": 4,

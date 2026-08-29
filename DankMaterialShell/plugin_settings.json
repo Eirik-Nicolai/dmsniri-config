@@ -8,7 +8,7 @@
   "bongoCat": {
     "enabled": true,
     "catColorMode": "primary",
-    "selectedDevicePath": "/dev/input/event9",
+    "selectedDevicePath": "all",
     "showMetrics": false,
     "catSizePercent": 108,
     "classicIdle": true,
@@ -97,6 +97,12 @@
     "autoCycleColors": false
   },
   "quickCapture": {
-    "enabled": true
+    "enabled": true,
+    "resetLastRegion": true,
+    "screenshotBackend": "dms",
+    "postNotification": "toast",
+    "doneAction": "clipboard",
+    "outputFormat": "jpg",
+    "jpegQuality": 100
   }
 }

@@ -6,6 +6,9 @@ foreground = ffffff
 # Comments start with a `#` and are only valid on their own line.
 # Blank lines are ignored!
 
+notify-on-command-finish = unfocused
+app-notifications = no-clipboard-copy
+
 confirm-close-surface = false
 
 keybind = ctrl+z=close_surface
