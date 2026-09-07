@@ -1,2 +1,13 @@
 // DMS Window Rules - Managed by DankMaterialShell
 // Do not edit manually - changes may be overwritten
+
+// @id=wr_1788788452240916896 @name=Emacs
+window-rule {
+    match app-id="^Emacs$" is-active=true is-focused=true is-active-in-column=true
+}
+
+// @id=wr_1788788547777659457 @name=Helium picture in picture
+window-rule {
+    match app-id="helium$" title="^Picture-in-Picture$"
+    open-floating true
+}

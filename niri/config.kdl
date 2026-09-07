@@ -395,6 +395,18 @@ window-rule {
     }
 }
 
+// Open windows maximized
+// add whichever app id to default it to maximized open
+window-rule {
+    match app-id="Emacs"
+    match app-id="com.danklinux.dms"
+    match app-id="helium"
+    match app-id="firefox"
+    
+    open-maximized true
+}
+
+
 // Add a shadow for fuzzel.
 layer-rule {
     match namespace="^wofi$"

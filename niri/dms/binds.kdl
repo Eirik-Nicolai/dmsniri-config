@@ -10,6 +10,8 @@ binds {
     Mod+BackSpace { toggle-window-floating; }
     Mod+Ctrl+Left { focus-monitor-left; }
     Mod+Ctrl+Right { focus-monitor-right; }
+    Mod+Equal { set-column-width "+5%"; }
+    Mod+Minus { set-column-width "-5%"; }
     Mod+Shift+Left { move-column-left; }
     Mod+Shift+Right { move-column-right; }
     Mod+Shift+Up { maximize-column; }

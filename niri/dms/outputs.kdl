@@ -3,7 +3,7 @@
 output "BOE 0x0A85 Unknown" {
     mode "1920x1080@59.999"
     scale 1
-    position x=0 y=1523
+    position x=0 y=1326
     hot-corners {
         off
     }
