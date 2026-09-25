@@ -12,7 +12,8 @@
     "showMetrics": false,
     "catSizePercent": 108,
     "classicIdle": true,
-    "enableBlinking": true
+    "enableBlinking": true,
+    "catYOffset": 3
   },
   "appLauncher": {
     "enabled": false

@@ -10,15 +10,19 @@ binds {
     Mod+BackSpace { toggle-window-floating; }
     Mod+Ctrl+Left { focus-monitor-left; }
     Mod+Ctrl+Right { focus-monitor-right; }
+    Mod+Ctrl+Shift+1 { move-column-to-monitor-up; }
+    Mod+Ctrl+Shift+2 { move-column-to-monitor-down; }
     Mod+Equal { set-column-width "+5%"; }
     Mod+Minus { set-column-width "-5%"; }
+    Mod+Shift+1 { focus-monitor-up; }
+    Mod+Shift+2 { focus-monitor-down; }
     Mod+Shift+Left { move-column-left; }
     Mod+Shift+Right { move-column-right; }
     Mod+Shift+Up { maximize-column; }
     Mod+Ctrl+S { screenshot; }
     Mod+Ctrl+K hotkey-overlay-title="Run an application: ghostty" { spawn "sh" "-c" "GTK_IM_MODULE=simple ghostty"; }
     Mod+Ctrl+L hotkey-overlay-title="Open File Manager" { spawn "ghostty" "-e" "yazi"; }
-    Mod+Ctrl+P repeat=false cooldown-ms=100 allow-inhibiting=false hotkey-overlay-title="Spawn emacs" { spawn "emacs"; }
+    Mod+Ctrl+P cooldown-ms=100 allow-inhibiting=false hotkey-overlay-title="Spawn emacs" repeat=false { spawn "emacs"; }
     Mod+L { spawn "hyprlock" "--no-fade-in" "--immediate-render"; }
     Mod+Return hotkey-overlay-title="Run an Application: wofi" { spawn "wofi" "--show" "drun" "-I"; }
     Mod+T hotkey-overlay-title="Open a Terminal: konsole" { spawn "konsole"; }

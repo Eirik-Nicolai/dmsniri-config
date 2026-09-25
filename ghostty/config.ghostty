@@ -3,6 +3,8 @@
 background = 282c34
 foreground = ffffff
 
+command = /usr/bin/fish --login --interactive
+
 # Comments start with a `#` and are only valid on their own line.
 # Blank lines are ignored!
 
@@ -20,7 +22,11 @@ keybind = ctrl+f=search_selection
 
 keybind = ctrl+l=clear_screen
 
+# tmux integration
+keybind = ctrl+shift+,=unbind
+keybind = ctrl+shift+.=unbind
 
 # Empty values reset the configuration to the default value
 font-family =
 font-feature = -calt
+
