@@ -8,6 +8,8 @@ command = /usr/bin/fish --login --interactive
 # Comments start with a `#` and are only valid on their own line.
 # Blank lines are ignored!
 
+working-directory = /home/eirik/
+
 notify-on-command-finish = unfocused
 app-notifications = no-clipboard-copy
 
